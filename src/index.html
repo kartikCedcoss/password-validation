@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='maindiv'>
+        <div>
+            <h1>SOME UNIVERSITY</h1>
+        </div>
+        <div>
+            <h2>Student Registration Form</h2>
+        </div>
+        <form>
+
+            <div class='informdiv'>
+                <div><span>Name:</span></t> <input type="text" id='inpname'> </t> <span id='nameerror'></span> </div>
+                <div><span>DOB:</span></t> <input type="date" id='inpdate'></div>
+                <div> <span name='sex'>Sex:</span></t>
+                    <input type="radio" name="Gender" id='male' value="Male">
+                    <label for="male">Male</label></t>
+                    <input type="radio" name="Gender" id='female' value="Female">
+                    <label for="female">Female</label> </t> <span id='sexerror'></span>
+                </div>
+                <div><span>Email:</span></t> <input type="text" id='inpemail'> </t> <span id='emailerror'></span> </div>
+                <div><span>Address:</span></t> <input type="text" id='inpadd'></t><span id='adderror'></span></div>
+                <div><span>School:</span></t> <select name="school" id="school">
+                        <option value="med">Medicine and Health Sciences</option>
+                    </select></div>
+
+                <div><span>Department:</span></t> <select name='department' id='depart'>
+                        <option value='clinical'>Clinical Medicine</option>
+                    </select></div>
+                <div> <span>Course:</span></t> <select name='course' id='course'>
+                        <option value='bsc'>Bsc Clinical Medicine</option>
+                    </select></div>
+                <div><span>Mobile Number:</span></t> <input type="text" id='inpmob'> </t> <span id='moberror'></span>
+                </div>
+                
+                <div><span>Password:</span></t> <input type="password" id='inppass'> </t> <span id='passerror'></span>
+                
+                <div>
+                    <div><span>Confirm Password:</span></t> <input type="password" id='inpconfirm'> </t> <span id='conferror'></span>
+                </div>
+                        <div>
+                    <input type='button' id='reset' value='Reset'> </t> <input type='button' value='submit' id='btnsubmit'>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div><p id='success' ></p></div>
+    <div>
+        <p>some university motto n' stuff</p>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+
+</html>
